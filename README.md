@@ -9,8 +9,8 @@
 > Workshop Description.
 
 ## :mega: Prerequisites
-- GitHub account with a verified email address
-- Install GitHub Learning Lab on your account
+- [GitHub account](https://github.com) with a [verified email address](https://help.github.com/en/github/getting-started-with-github/verifying-your-email-address)
+- [Install GitHub Learning Lab](https://lab.github.com/docs/install) on your account
 
 ## :books: Resources
 - [GitHub Actions](https://help.github.com/en/actions)
