@@ -21,7 +21,7 @@
 
 ## :mega: Prerequisites
 - [GitHub account](https://github.com) with a [verified email address](https://help.github.com/en/github/getting-started-with-github/verifying-your-email-address)
-- [Install GitHub Learning Lab](https://lab.github.com/docs/install) on your account
+- [Install GitHub Learning Lab](https://lab.github.com/docs/install-on-organization) on your account
 
 ## :books: Resources
 - [GitHub Actions](https://help.github.com/en/actions)
