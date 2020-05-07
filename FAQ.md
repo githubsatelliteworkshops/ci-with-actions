@@ -18,7 +18,7 @@
   - A: Delete the repository, unregister and re-register for the course on LL
 - Q: What are the possible OS targets? Is it possible to use a custom OS?
   - A:
-    - You can do a custom OS, but would have to host the runner yourself. See these docs: https://help.github.com/en/actions/hosting-your-own-runners
+    - You can do a custom OS, but would have to host the runner yourself. [See these docs](https://help.github.com/en/actions/hosting-your-own-runners)
     - Currently we support the following OS' on the GitHub hosted runners (default what the action would run on). See [relevant docs here](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#github-hosted-runners):
       - Windows Server 2019
       - Ubuntu 18.04
