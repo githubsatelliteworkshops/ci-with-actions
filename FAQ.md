@@ -34,4 +34,5 @@
     - Professional Services can provide official trainings, reach out to services@github.com
     - The official [GitHub YouTube channel](https://www.youtube.com/user/github/search?query=actions) has some content, much of which is from GitHub Universe 2019 (our last conference)
     - [@iamhughes](https://github.com/iamhughes) did an Actions 101 workshop at GitHub Universe, the slides are [on speakerdeck](https://speakerdeck.com/iamhughes/github-actions-101)
-    
+- Q: In case we have a monorepo with a java, nodejs and python codebase, is it possible to run only specific “build” according to the code change?
+  - A: Depending on the layout of your repository, this may be possible using various filters for the triggers you set in your workflow. Please see this section on [branch/tag filtering](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestbranchestags) and this one on [specific filepath filtering](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestpaths)
