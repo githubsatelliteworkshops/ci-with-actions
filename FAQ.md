@@ -1,0 +1,35 @@
+- Q: Are the slides going to be provided after?
+  - A: Yes, they are already in [the repository](https://github.com/githubsatelliteworkshops/ci-with-actions/blob/master/satellite-2020-workshops-ci-with-actions.pdf)
+- Q: Will a recording of the talk be available after the course?
+  - A: Yes, all attendees will receive a copy of the recording after the workshop
+- Q: Are workflows conceptually similar to Jenkins Pipelines?
+  - A: Yes, see [this help doc](https://help.github.com/en/actions/migrating-to-github-actions/migrating-from-jenkins-to-github-actions) for more information
+- Q: What's the diff between build 10.x and build 12.x?
+  - A: This is Node 10.x and Node 12.x ran [in a matrix](https://github.com/githubsatelliteworkshops/ci-with-actions/blob/master/github-actions-for-ci/.github/workflows/nodejs.yml#L31-L34)
+- Q: I like the bot, especially suggestions for fixes, would be nice to integrate it at work. How do I get this?
+  - A:
+    - It's a GitHub App using Probot to listen to webhook evens and take action from there. That said, it's much more in depth in terms of how courses are built and such
+    - Available [on prem or in the cloud as well](https://lab.github.com/docs/ghe)
+    - It is a [GitHub App](https://developer.github.com/apps/building-github-apps/)
+    - It leverages [Probot](https://probot.github.io/)
+- Q: How can I retake this Learning Lab course if I wanted to?
+  - A: Delete the repository, unregister and re-register for the course on LL
+- Q: What are the possible OS targets? Is it possible to use a custom OS?
+  - A:
+    - You can do a custom OS, but would have to host the runner yourself. See these docs: https://help.github.com/en/actions/hosting-your-own-runners
+    - Currently we support the following OS' on the GitHub hosted runners (default what the action would run on). See [relevant docs here](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#github-hosted-runners):
+      - Windows Server 2019
+      - Ubuntu 18.04
+      - Ubuntu 16.04
+      - macOS Catalina 10.15
+    - Just to be thorough, this is [what software is available by default](https://help.github.com/en/actions/reference/software-installed-on-github-hosted-runners) on the hosted runners we offer as well
+- Q: Will Ubuntu 20.04 be supported soon?
+  - A: We have started work internally on preparing an imae for it, however we don't have an ETA currently. It was noted that 20.04 doesn't have much software support yet to support it as an action runner just yet.
+- Q: When we don't mention nodejs as in the build, which version of node is used by default?
+  - A: Great question, that should be based off of the action itself, as the `action.yml` specifies what version. Example from a fun action [@iamhughes](https://github.com/iamhughes) [made this action](https://github.com/IAmHughes/giphy-generator/blob/master/action.yml#L13-L15) as an example. Another example from [`actions/checkout`]( https://github.com/actions/checkout/blob/master/action.yml#L71-L74)
+- Q: Are there additional trainings besides Learning Lab for GitHub Actions? They have a steep learning curve.
+  - A:
+    - Professional Services can provide official trainings, reach out to services@github.com
+    - The official [GitHub YouTube channel](https://www.youtube.com/user/github/search?query=actions) has some content, much of which is from GitHub Universe 2019 (our last conference)
+    - [@iamhughes](https://github.com/iamhughes) did an Actions 101 workshop at GitHub Universe, the slides are [on speakerdeck](https://speakerdeck.com/iamhughes/github-actions-101)
+    
